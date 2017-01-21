@@ -1,8 +1,8 @@
-$:.push File.expand_path("./lib", __FILE__)
+$:.push File.expand_path("../lib", __FILE__)
 
 Gem::Specification.new do |gem|
   gem.name = "administrate-field-json"
-  gem.version = '0.0.3'
+  gem.version = "0.0.4"
   gem.authors = ["Eddie A Tejeda"]
   gem.email = ["eddie@codeforamerica.org"]
   gem.homepage = "https://github.com/eddietejeda/administrate-field-json"
@@ -14,6 +14,6 @@ Gem::Specification.new do |gem|
   gem.files = `git ls-files`.split("\n")
   gem.test_files = `git ls-files -- {test,spec,features}/*`.split("\n")
 
-  gem.add_dependency "administrate", "~> 0.3.0"
-  gem.add_dependency "rails", "~> 5.0.0.1"
+  gem.add_dependency "administrate", "~> 0.3"
+  gem.add_dependency "rails", ">= 4.2", "< 5.1"
 end
