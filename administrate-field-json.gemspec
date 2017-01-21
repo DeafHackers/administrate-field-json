@@ -1,6 +1,6 @@
 $:.push File.expand_path("./lib", __FILE__)
 
-require_relative "./lib/administrate/field/json"
+require "./lib/administrate/field/json"
 
 Gem::Specification.new do |gem|
   gem.name = "administrate-field-json"
