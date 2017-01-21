@@ -1,4 +1,4 @@
-$:.push File.expand_path("../lib", __FILE__)
+$:.push File.expand_path("./lib", __FILE__)
 
 require_relative "./lib/administrate/field/json"
 
