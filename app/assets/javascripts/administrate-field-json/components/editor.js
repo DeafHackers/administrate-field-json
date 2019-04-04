@@ -18,7 +18,7 @@ $(function() {
       onError: function (err) {
         alert(err.toString());
       },
-      mode: 'code',
+      mode: 'text',
       modes: ['code', 'text', 'tree'],
     };
 
