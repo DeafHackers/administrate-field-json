@@ -1,9 +1,9 @@
 {
   "name": "administrate-field-json",
-  "version": "0.0.2",
+  "version": "0.1",
   "description": "",
   "dependencies": {
-    "jsoneditor": "5.5.x"
+    "jsoneditor": "^5.32.2"
   },
   "scripts": {
     "install": "cp node_modules/jsoneditor/dist/jsoneditor.js vendor/assets/javascripts/; cp node_modules/jsoneditor/dist/jsoneditor.css vendor/assets/stylesheets/;  cp node_modules/jsoneditor/dist/img/jsoneditor-icons.svg vendor/assets/images/;  sed -i.bak 's/img/\\/assets/g' vendor/assets/stylesheets/jsoneditor.css; exit 0;"

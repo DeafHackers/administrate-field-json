@@ -3,7 +3,8 @@ $(function() {
   $('.administrate-jsoneditor').each(function( index ) {
 
     var $current = $(this).find("textarea");
-    
+    var customOptions = $(this).data('options');
+
     var options = {    
       onChange: function(){
         try {
@@ -18,8 +19,10 @@ $(function() {
         alert(err.toString());
       },
       mode: 'tree',
-      modes: ['text', 'tree'],
+      modes: ['code', 'text', 'tree'],
     };
+
+    options = $.extend({}, options, customOptions);
 
     var editor = new JSONEditor(this, options);
 
